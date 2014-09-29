@@ -1,0 +1,19 @@
+function ExOh(str){
+	var xCount = 0;
+	var oCount = 0;			
+	var str = str.toLowerCase();
+	
+	for (var i = 0; i < str.length; i++) {			
+		if (str[i] == "x") {
+			xCount++;				
+		} else {
+			oCount++;
+		}
+	}
+	
+	if (xCount == oCount) {			
+		return true;
+	} else {
+		return false;
+	}
+}
